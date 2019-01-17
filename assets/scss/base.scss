@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+
+    h1 {
+        font-size: 40px;
+        font-family: monospace;
+    }
+}
+
+.TEXTO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('file:///C:/Users/qualq/OneDrive/Desktop/challenge-landing-page/assets/images/background-home.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 560px;
+
+    h1 {
+        font-family: 'roboto slab';
+        text-align: center;
+        font-size: 40px;
+        color: white;
+        margin: 10px 0;
+    }
+
+    p {
+        font-family: "roboto";
+        text-align: center;
+        width: 588px;
+        font-size: 20px;
+        color: white;
+        margin-bottom: 80px;
+    }
+
+
+    form {
+        display: flex;
+        align-items: center;
+
+        .input {
+            margin: 0 10px;
+            border-bottom: 2px solid #FF6E16;
+            height: 40px;
+            width: 298px;
+
+            input {
+
+                border: none;
+                background-color: transparent;
+                // border-bottom: 1px solid orange;
+                font-size: 20px;
+                color: #FF6E16;
+
+                &::placeholder {
+                    color: #FF6E16;
+                }
+            }
+        }
+
+        button {
+            border: none;
+            color: white;
+            padding: 15px;
+            background-color: orange;
+            font-family: 'roboto slab';
+
+        }
+    }
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        color: #aa1423;
+        font-size: 30px;
+        margin: 15px;
+        font-family: 'roboto slab';
+
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+        width: 470px;
+        margin: -10px;
+    }
+
+    p {
+        color: #aa1423;
+        font-size: 25px;
+        font-family: 'roboto slab';
+
+    }
+}
+
+.hits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #eee;
+    height: 210px;
+
+    h1 {
+        text-align: center;
+        font-family: 'roboto';
+        margin: 15px 0;
+        font-size: 30px;
+        color: #aa1423;
+    }
+
+    input {
+        text-align: center;
+        font-size: 30px;
+        width: 200px;
+        height: 50px;
+        color: #aa1423;
+
+    }
+
+    p {
+        color: #777;
+        font-size: 18px;
+        font-family: 'roboto slab';
+        margin: 10px 0;
+    }
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 60px;
+    height: 80px;
+
+    img {
+        width: 50px;
+        margin-bottom: -3px;
+    }
+
+    .twitter {
+        width: 40px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 28px;
+        color: #aa1423;
+
+    }
+
+    h1 {
+        color: white;
+        padding: 12px;
+        background: #888888;
+        border-radius: 20px;
+        display: flex;
+        font-size: 17px;
+        font-family: monospace;
+        align-items: center;
+        height: 10px;
+        float: left;
+        margin: 4px;
+    }
+}
+
+
+
+@media(max-width:768px) {
+
+    .TEXTO {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column wrap;
+
+        h1 {
+            font-family: 'roboto slab';
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            margin: 10px;
+        }
+
+        p {
+            font-family: "roboto";
+            text-align: center;
+            font-size: 17px;
+            width: 207px;
+            color: white;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column wrap;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: row wrap;
+
+            .input {
+                margin: 10px;
+                border-bottom: 2px solid #FF6E16;
+                height: 40px;
+                width: 230px;
+
+                input {
+
+                    border: none;
+                    background-color: transparent;
+                    font-size: 18px;
+                    color: #FF6E16;
+                    text-align: center;
+
+                    &::placeholder {
+                        color: #FF6E16;
+                    }
+                }
+            }
+
+            button {
+                border: none;
+                color: white;
+                padding: 15px;
+                background-color: orange;
+                font-family: "roboto slab";
+
+            }
+        }
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column wrap;
+
+        h1 {
+            text-align: center;
+            color: #aa1423;
+            font-size: 45px;
+            margin: 70px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: "roboto slab";
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            width: 290px;
+            margin: -10px;
+        }
+
+        p {
+            color: #aa1423;
+            font-size: 15px;
+            font-family: 'roboto slab';
+
+        }
+
+    }
+
+    .hits {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column wrap;
+
+    }
+}
